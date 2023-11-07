@@ -1,7 +1,7 @@
 {
   "id": "quote",
   "type": "SharedSlice",
-  "name": "Quote",
+  "name": "CitationBloc",
   "description": "Quote",
   "variations": [
     {

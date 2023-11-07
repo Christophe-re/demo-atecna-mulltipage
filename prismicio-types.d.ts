@@ -188,11 +188,11 @@ export type AllDocumentTypes =
   | SettingsDocument;
 
 /**
- * Primary content in *Hero → Primary*
+ * Primary content in *BannerTop → Primary*
  */
 export interface HeroSliceDefaultPrimary {
   /**
-   * Titre field in *Hero → Primary*
+   * Titre field in *BannerTop → Primary*
    *
    * - **Field Type**: Rich Text
    * - **Placeholder**: Titre
@@ -202,7 +202,7 @@ export interface HeroSliceDefaultPrimary {
   text: prismic.RichTextField;
 
   /**
-   * Lien field in *Hero → Primary*
+   * Lien field in *BannerTop → Primary*
    *
    * - **Field Type**: Link
    * - **Placeholder**: *None*
@@ -212,7 +212,7 @@ export interface HeroSliceDefaultPrimary {
   buttonLink: prismic.LinkField;
 
   /**
-   * Button Text field in *Hero → Primary*
+   * Button Text field in *BannerTop → Primary*
    *
    * - **Field Type**: Text
    * - **Placeholder**: Text du lien
@@ -222,7 +222,7 @@ export interface HeroSliceDefaultPrimary {
   buttonText: prismic.KeyTextField;
 
   /**
-   * Image de fond field in *Hero → Primary*
+   * Image de fond field in *BannerTop → Primary*
    *
    * - **Field Type**: Image
    * - **Placeholder**: *None*
@@ -233,7 +233,7 @@ export interface HeroSliceDefaultPrimary {
 }
 
 /**
- * Default variation for Hero Slice
+ * Default variation for BannerTop Slice
  *
  * - **API ID**: `default`
  * - **Description**: Hero
@@ -246,12 +246,12 @@ export type HeroSliceDefault = prismic.SharedSliceVariation<
 >;
 
 /**
- * Slice variation for *Hero*
+ * Slice variation for *BannerTop*
  */
 type HeroSliceVariation = HeroSliceDefault;
 
 /**
- * Hero Shared Slice
+ * BannerTop Shared Slice
  *
  * - **API ID**: `hero`
  * - **Description**: Hero
@@ -420,11 +420,11 @@ export type ImageCardsSlice = prismic.SharedSlice<
 >;
 
 /**
- * Primary content in *Quote → Primary*
+ * Primary content in *CitationBloc → Primary*
  */
 export interface QuoteSliceDefaultPrimary {
   /**
-   * Quote field in *Quote → Primary*
+   * Quote field in *CitationBloc → Primary*
    *
    * - **Field Type**: Rich Text
    * - **Placeholder**: citation
@@ -434,7 +434,7 @@ export interface QuoteSliceDefaultPrimary {
   quote: prismic.RichTextField;
 
   /**
-   * Source field in *Quote → Primary*
+   * Source field in *CitationBloc → Primary*
    *
    * - **Field Type**: Text
    * - **Placeholder**: source de la citation
@@ -445,7 +445,7 @@ export interface QuoteSliceDefaultPrimary {
 }
 
 /**
- * Default variation for Quote Slice
+ * Default variation for CitationBloc Slice
  *
  * - **API ID**: `default`
  * - **Description**: Quote
@@ -458,12 +458,12 @@ export type QuoteSliceDefault = prismic.SharedSliceVariation<
 >;
 
 /**
- * Slice variation for *Quote*
+ * Slice variation for *CitationBloc*
  */
 type QuoteSliceVariation = QuoteSliceDefault;
 
 /**
- * Quote Shared Slice
+ * CitationBloc Shared Slice
  *
  * - **API ID**: `quote`
  * - **Description**: Quote
@@ -542,11 +542,11 @@ type TextSliceVariation = TextSliceDefault | TextSliceTwoColumns;
 export type TextSlice = prismic.SharedSlice<"text", TextSliceVariation>;
 
 /**
- * Primary content in *TextWithImage → Primary*
+ * Primary content in *TextAndImage → Primary*
  */
 export interface TextWithImageSliceDefaultPrimary {
   /**
-   * Text field in *TextWithImage → Primary*
+   * Text field in *TextAndImage → Primary*
    *
    * - **Field Type**: Rich Text
    * - **Placeholder**: Text libre
@@ -556,7 +556,7 @@ export interface TextWithImageSliceDefaultPrimary {
   text: prismic.RichTextField;
 
   /**
-   * Image field in *TextWithImage → Primary*
+   * Image field in *TextAndImage → Primary*
    *
    * - **Field Type**: Image
    * - **Placeholder**: *None*
@@ -567,7 +567,7 @@ export interface TextWithImageSliceDefaultPrimary {
 }
 
 /**
- * Default variation for TextWithImage Slice
+ * Default variation for TextAndImage Slice
  *
  * - **API ID**: `default`
  * - **Description**: TextWithImage
@@ -580,11 +580,11 @@ export type TextWithImageSliceDefault = prismic.SharedSliceVariation<
 >;
 
 /**
- * Primary content in *TextWithImage → Primary*
+ * Primary content in *TextAndImage → Primary*
  */
 export interface TextWithImageSliceWithButtonPrimary {
   /**
-   * Text field in *TextWithImage → Primary*
+   * Text field in *TextAndImage → Primary*
    *
    * - **Field Type**: Rich Text
    * - **Placeholder**: Text Libre
@@ -594,7 +594,7 @@ export interface TextWithImageSliceWithButtonPrimary {
   text: prismic.RichTextField;
 
   /**
-   * Button Link field in *TextWithImage → Primary*
+   * Button Link field in *TextAndImage → Primary*
    *
    * - **Field Type**: Link
    * - **Placeholder**: Lien
@@ -604,7 +604,7 @@ export interface TextWithImageSliceWithButtonPrimary {
   buttonLink: prismic.LinkField;
 
   /**
-   * Button Text field in *TextWithImage → Primary*
+   * Button Text field in *TextAndImage → Primary*
    *
    * - **Field Type**: Text
    * - **Placeholder**: Text du lien
@@ -614,7 +614,7 @@ export interface TextWithImageSliceWithButtonPrimary {
   buttonText: prismic.KeyTextField;
 
   /**
-   * Image field in *TextWithImage → Primary*
+   * Image field in *TextAndImage → Primary*
    *
    * - **Field Type**: Image
    * - **Placeholder**: *None*
@@ -625,7 +625,7 @@ export interface TextWithImageSliceWithButtonPrimary {
 }
 
 /**
- * With Button variation for TextWithImage Slice
+ * With Button variation for TextAndImage Slice
  *
  * - **API ID**: `withButton`
  * - **Description**: TextWithImage
@@ -638,14 +638,14 @@ export type TextWithImageSliceWithButton = prismic.SharedSliceVariation<
 >;
 
 /**
- * Slice variation for *TextWithImage*
+ * Slice variation for *TextAndImage*
  */
 type TextWithImageSliceVariation =
   | TextWithImageSliceDefault
   | TextWithImageSliceWithButton;
 
 /**
- * TextWithImage Shared Slice
+ * TextAndImage Shared Slice
  *
  * - **API ID**: `text_with_image`
  * - **Description**: TextWithImage
