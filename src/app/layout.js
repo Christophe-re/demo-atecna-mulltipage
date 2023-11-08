@@ -8,6 +8,8 @@ import Image from "next/image";
 import { createClient, repositoryName } from "@/prismicio";
 import { Bounded } from "@/components/Bounded";
 import logo from "../../public/images/logo-h.svg";
+import dynamic from "next/dynamic";
+
 const inter = Inter({
   subsets: ["latin"],
   display: "swap",
@@ -18,6 +20,7 @@ const inter = Inter({
  * @param {{ children: React.ReactNode }}
  */
 export default async function RootLayout({ children }) {
+  const CrispWithNoSSR = dynamic(() => import("../components/Crisp"));
   return (
     <html lang="en" className="font-primary">
       <body className="overflow-x-hidden antialiased bg-dulceleche">
@@ -25,6 +28,7 @@ export default async function RootLayout({ children }) {
         <Header />
         {children}
         <PrismicPreview repositoryName={repositoryName} />
+        <CrispWithNoSSR />
       </body>
     </html>
   );

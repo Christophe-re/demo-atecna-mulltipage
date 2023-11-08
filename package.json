@@ -19,6 +19,7 @@
     "@prismicio/next": "^1.4.0",
     "@prismicio/react": "^2.7.3",
     "clsx": "^2.0.0",
+    "crisp-sdk-web": "^1.0.21",
     "next": "^14.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
