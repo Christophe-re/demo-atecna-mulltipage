@@ -195,7 +195,7 @@ export interface HeroSliceDefaultPrimary {
    * Titre field in *BannerTop → Primary*
    *
    * - **Field Type**: Rich Text
-   * - **Placeholder**: Titre
+   * - **Placeholder**: Titre avec text optionnel
    * - **API ID Path**: hero.primary.text
    * - **Documentation**: https://prismic.io/docs/field#rich-text-title
    */

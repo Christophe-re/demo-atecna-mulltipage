@@ -15,7 +15,7 @@
           "type": "StructuredText",
           "config": {
             "label": "Titre",
-            "placeholder": "Titre ",
+            "placeholder": "Titre avec text optionnel",
             "allowTargetBlank": true,
             "multi": "paragraph,heading1,strong,em"
           }
